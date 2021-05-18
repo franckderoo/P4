@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="Default">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -17,10 +17,10 @@
     />
     <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
 
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="./css/et-line.css" />
 
     <script src="./js/jquery-2.1.0.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
@@ -41,34 +41,12 @@
         <div class="container bloc-sm">
           <nav class="navbar row">
             <div class="navbar-header">
-              <a class="navbar-brand" href="index.html"
+              <a class="navbar-brand" href="index.html" title="accueil"
                 ><img
                   src="img/image/la-chouette-agence.webp"
                   alt="atlanta web design logo"
                   height="40"
               /></a>
-              <button
-                id="nav-toggle"
-                type="button"
-                class="ui-navbar-toggle navbar-toggle"
-                data-toggle="collapse"
-                data-target=".navbar-1"
-              >
-                <span class="sr-only">Toggle navigation</span
-                ><span class="icon-bar"></span><span class="icon-bar"></span
-                ><span class="icon-bar"></span>
-              </button>
-            </div>
-            <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-              <ul class="site-navigation nav navbar-nav">
-                <li>
-                  <a href="index.html">Accueil</a>
-                </li>
-                <li></li>
-                <li>
-                  <a href="page2.html">page2 &gt;</a>
-                </li>
-              </ul>
             </div>
           </nav>
         </div>
@@ -77,15 +55,20 @@
 
       <!-- bloc-6 -->
       <div
-        class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper"
+        class="
+          bloc
+          bg-dots-bg bg-repeat
+          bgc-atomic-tangerine
+          d-bloc
+          bloc-bg-texture
+          texture-paper
+        "
         id="bloc-6"
       >
         <div class="container bloc-lg">
           <div class="row">
             <div class="col-sm-12">
-              <h1 class="text-center hero-bloc-text tc-white">
-                Parlons web design !
-              </h1>
+              <h1 class="hero-bloc-text tc-white">Parlons web design !</h1>
               <p class="text-center mg-lg tc-white tight-width-whitespace">
                 Nous sommes ravis que vous souhaitiez collaborer avec notre
                 agence.<br />
@@ -103,40 +86,45 @@
         <div class="container bloc-lg">
           <div class="row">
             <div class="col-sm-6">
-              <form
-                id="form_1"
-                novalidate
-                success-msg="Your message has been sent."
-                fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
-              >
+              <form id="form_1" novalidat>
                 <div class="form-group">
-                  <label> Nom </label>
-                  <input id="name" class="form-control" required />
-                </div>
-                <div class="form-group">
-                  <label> Adresse email </label>
+                  <label for="name"> Nom </label>
                   <input
-                    id="email"
+                    id="name"
                     class="form-control"
-                    type="email"
+                    placeholder="Votre nom"
                     required
                   />
                 </div>
                 <div class="form-group">
-                  <label> Comment nous avez-vous connu ? </label>
+                  <label for="email"> Adresse email </label>
+                  <input
+                    id="email"
+                    class="form-control"
+                    type="email"
+                    placeholder="Votre Adresse email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="input_504">
+                    Comment nous avez-vous connu ?
+                  </label>
                   <input
                     class="form-control"
                     type="email"
+                    placeholder="Pub, internet, amis..."
                     required
                     id="input_504"
                   />
                 </div>
                 <div class="form-group">
-                  <label>
+                  <label for="message">
                     Brief de votre projet (Ajoutez autant de détails que
                     nécessaire)<br /> </label
                   ><textarea
                     id="message"
+                    placeholder="Décrivez votre projet"
                     class="form-control"
                     rows="4"
                     cols="50"
@@ -144,7 +132,12 @@
                   ></textarea>
                 </div>
                 <button
-                  class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
+                  class="
+                    bloc-button
+                    btn btn-lg btn-block
+                    cta-hero
+                    btn-atomic-tangerine
+                  "
                   type="submit"
                 >
                   Envoyer
@@ -152,7 +145,7 @@
               </form>
             </div>
             <div class="col-sm-6">
-              <p>
+              <p class="adresse">
                 contact@lachouetteagence.com<br />2 place Sathonay 69001 Lyon<br />Ouvert
                 de 9h à 18h, du lundi au vendredi<br />
               </p>
