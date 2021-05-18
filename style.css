@@ -270,6 +270,12 @@ a:hover {
 .adresse {
   font-size: 1em;
 }
+.citation {
+  text-align: center;
+  font-size: 1em;
+  width: 60%;
+  margin: auto;
+}
 .voffset {
   margin-top: 30px;
 }
